@@ -21,19 +21,20 @@
   list-style: circle;
 }
 
-.header__links-list-item:first-child {
-  list-style: none;
-}
-
-.header__link_active {
-  text-decoration: none !important;
-}
-
 .link {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-position: under;
   text-transform: lowercase;
+  cursor: pointer;
+}
+
+.header__links-list-item:first-of-type {
+  list-style: none;
+}
+
+.header__link_active {
+  text-decoration: none;
 }
 
 .header__logo {
@@ -65,6 +66,7 @@
   color: white;
   background-image: url(../images/cover.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .overlay {
@@ -128,7 +130,7 @@
 }
 
 .bet-button {
-  border: 1px solid white;
+  border: 1px solid currentColor;
   padding: 12px 32px;
   font-family: Raleway;
   font-size: 22px;
@@ -193,11 +195,12 @@
   width: 100%;
   max-width: 334px;
   height: 100%;
-  max-height: 596px;
+  min-height: 596px;
   padding: 48px 40px;
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .card__title {
@@ -282,6 +285,7 @@ figure::before {
   font-style: normal;
   line-height: normal;
 }
+
 .about__text {
 margin-bottom: 24px;
 font-weight: 400;
@@ -294,11 +298,11 @@ line-height: 24px;
   display: flex;
   justify-content: space-between;
   width: 1100px;
-  height: 180px;
   margin-top: 160px;
+  padding: 0 50px 82px;
 }
 
-.footer__adress {
+.footer__address {
   display: flex;
   flex-direction: column;
   font-weight: 400;
