@@ -15,10 +15,6 @@
   padding-left: 50px;
 }
 
-.header__logo {
-  display: block;
-}
-
 .header__links-list {
   display: flex;
   gap: 32px;
@@ -40,6 +36,10 @@
   text-decoration-thickness: 1px;
   text-underline-position: under;
   text-transform: lowercase;
+}
+
+.header__logo {
+  display: block;
 }
 
 .header__logo-image {
@@ -83,7 +83,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-grow: 1.6;
+  flex-grow: 1.65;
   justify-content: flex-end;
   gap: 20px;
   font-weight: 700;
