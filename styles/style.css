@@ -22,16 +22,14 @@
 }
 
 .header__links-list-item:first-child {
-  text-decoration: none;
   list-style: none;
 }
 
 .header__link_active {
-  list-style-type: none;
+  text-decoration: none !important;
 }
 
 .link {
-  color: black;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-position: under;
@@ -315,9 +313,8 @@ line-height: 24px;
   font-size: 18px;
 }
 
-.footer__menu-link:first-child {
+.footer__menu-link_active {
   text-decoration: none;
-  list-style: none;
 }
 
 .footer__social-icon {
